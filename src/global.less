@@ -1,0 +1,297 @@
+@import './assets/style/index.less';
+// @layout-body-background: #ff0ae6 !important; // 修改为你想要的背景色
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  // --background-color: #010710;
+  // background-color: #0b61e1 !important;
+}
+
+// // body,
+// // .ant-layout,
+// // .ant-layout-sider,
+// // .ant-layout-header {
+// //   background-color: var(--background-color) !important;
+// // }
+
+// // .ant-layout-content {
+// //   background-color: var(--background-color) !important;
+// // }
+
+// 自定义励字造梦简字体
+@font-face {
+  font-family: '励字造梦简 大粗';
+  src: url('../src/assets/fonts/DreamFonts.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: '励字造梦简 大粗', sans-serif;
+}
+
+.custom-font {
+  font-family: '励字造梦简 大粗', sans-serif;
+}
+
+p,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+.ant-pro-global-header-header-actions-item {
+  cursor: default;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 1200px;
+  min-height: 768px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  text-decoration: none !important;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.ant-pro-layout .ant-pro-sider .ant-layout-sider-children {
+  background-color: #fff;
+}
+
+/* 输入框圆角设置 */
+.ant-input-affix-wrapper {
+  border-radius: 6px;
+}
+
+.ant-layout-sider-children {
+  background-image: url('/images/backgroundimg/sider/BottomRight.png');
+  background-repeat: no-repeat; // 确保图片不重复
+  background-position: bottom; // 将图片定位在底部
+  background-size: 100%; // 具体尺寸
+  width: 100%;
+  padding-top: 42px !important;
+  padding-bottom: 150px !important;
+
+  .ant-menu {
+    // display: flex;
+    // flex-direction: column;
+    // gap: 2px;
+
+
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      display: flex;
+      align-items: center;
+      margin-top: 4px !important;
+      margin-bottom: 4px !important;
+      height: 50px;
+      line-height: 55px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #878787;
+
+      .ant-pro-base-menu-inline-item-icon {
+        font-size: 32px !important;
+      }
+    }
+  }
+}
+
+/* 选择子菜单的 li 标签 */
+.ant-menu-submenu .ant-menu-item {
+  padding-left: 60px !important;
+  font-weight: 566 !important;
+  font-size: 16px !important;
+
+  /* 你可以调整这个值来增加左边距 */
+}
+
+
+.ant-pro-base-menu-inline-item-icon {
+  padding-right: 12px;
+}
+
+.ant-pro-sider-logo h1 {
+  background: var(--primary-color);
+  background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* 降级方案，为不支持 background-clip: text 的浏览器 */
+  font-size: 38px !important;
+  font-family: '励字造梦简 大粗', sans-serif;
+  padding: 20px 0 40px;
+}
+
+.ant-layout-sider .ant-menu-submenu-title-selected {
+  background-color: #fff !important;
+  background: var(--primary-color);
+  border-radius: 20px 20px 20px 0 !important;
+
+  .ant-pro-base-menu-inline-item-title {
+    color: #eff4ff !important;
+    font-size: 19px;
+    font-weight: 800;
+
+    .anticon {
+      color: #eff4ff;
+    }
+  }
+}
+
+.ant-layout-sider .ant-menu-item-selected {
+  background-color: #fff !important;
+  background: var(--primary-color);
+  border-radius: 20px 20px 20px 0 !important;
+
+  /* 这里设置右侧的圆角 */
+  .ant-pro-base-menu-inline-item-title {
+    color: #eff4ff !important;
+    font-size: 19px;
+    font-weight: 800;
+
+    .anticon {
+      color: #eff4ff;
+    }
+  }
+}
+
+.ant-layout-sider .ant-menu-item-selected:hover {
+  border-radius: 20px 20px 20px 0 !important;
+}
+
+// 收缩状态下的样式
+.ant-layout-sider-collapsed {
+  .ant-menu-item {
+    height: 50px !important; // 调整收缩状态下菜单项的高度
+    line-height: 50px !important; // 调整收缩状态下菜单项的行高
+
+    .ant-pro-base-menu-inline-item-icon {
+      font-size: 26px !important; // 调整收缩状态下图标的大小
+    }
+  }
+}
+
+/* 收缩状态下的图标颜色 */
+.ant-menu-inline-collapsed .ant-menu-item-selected .anticon {
+  color: white;
+
+}
+
+/* 收缩状态下鼠标悬停时的图标颜色 */
+.ant-menu-inline-collapsed .ant-menu-item:hover .anticon {
+  color: #4978f9;
+}
+
+// 调整菜单项的样式
+.ant-menu-item {
+  padding: 0 8px; // 调整菜单项的内边距
+  border-bottom: none !important;
+}
+
+.ant-menu-submenu-title .anticon,
+.ant-menu-item .anticon {
+  font-size: 24px !important;
+}
+
+.ant-pro-sider-logo {
+  border-bottom: none !important;
+  margin: 8px 10px;
+}
+
+.ant-pro-sider-logo img {
+  width: auto;
+  height: 80%;
+
+}
+
+.ant-menu-item:hover {
+  .ant-pro-base-menu-inline-item-icon,
+  .ant-pro-base-menu-inline-item-text {
+    color: #4978f9 !important;
+  }
+}
+
+.ant-menu-item-selected:hover {
+  .ant-pro-base-menu-inline-item-icon,
+  .ant-pro-base-menu-inline-item-text {
+    color: white !important;
+  }
+}
+
+.ant-pro-layout .ant-layout-header {
+  height: 80px !important;
+
+  /* 或者你想要的任何高度 */
+  line-height: 80px !important;
+
+  /* 通常与height相同，以保持内容垂直居中 */
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.header-left-content {
+  margin-top: 5%;
+
+  img {
+    margin: 2% 0 0 8%;
+  }
+}
+
+.ant-pro-global-header-right-content {
+  margin-top: 40px;
+}

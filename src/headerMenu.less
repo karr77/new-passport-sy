@@ -1,0 +1,45 @@
+.ant-menu-overflow {
+    margin-left: 80px !important;
+    height: 50px !important;
+
+    /* 或者你想要的任何高度 */
+    line-height: 50px !important;
+
+    /* 通常与height相同，以保持内容垂直居中 */
+    background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected::after,
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected::after {
+    border-bottom-width: 2px;
+    border-bottom: 1px solid transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item:hover::after,
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+:where(.css-dev-only-do-not-override-16z92hj).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu:hover::after {
+    // border-bottom-width: 2px;
+    border-bottom: 1px solid transparent !important;
+}
+
+
+.ant-menu-horizontal>.ant-menu-item-selected,
+.ant-menu-horizontal>.ant-menu-item-selected:hover {
+    // background: #E1EAFF !important;
+    border-bottom-color: #fff !important;
+    border-radius: 50px !important;
+}
+
+.ant-menu-horizontal {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.ant-menu-light.ant-menu-horizontal>.ant-menu-item {
+    transition: none !important;
+
+    /* 禁用所有过渡效果 */
+}

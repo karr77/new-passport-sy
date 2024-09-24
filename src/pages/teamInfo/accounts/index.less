@@ -1,0 +1,29 @@
+.personalTable{
+    :global{
+        .ant-pro-table-list-toolbar-left{
+            display: none;
+        }
+
+        .ant-pro-table-list-toolbar-right {
+            display: block;
+        }
+
+        .ant-table-wrapper .ant-table-thead >tr>th:not(:last-child, .ant-table-selection-column, .ant-table-row-expand-icon-cell, [colspan])::before{
+            display: none;
+        }
+    }
+}
+
+// 新增帐号弹窗
+.addName{
+    :global{
+        .ant-modal-body{
+            padding: 20px 10px 10px 6px ;
+        }
+
+        .ant-form-item .ant-form-item-label >label{
+            min-width: 100px;
+            justify-content: flex-end;
+        }
+    }
+}

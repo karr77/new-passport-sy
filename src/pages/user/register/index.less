@@ -1,0 +1,152 @@
+.register {
+  .footer {
+    margin-top: 24px !important;
+
+    .agree-text {
+      font-size: 12px;
+      color: #999 !important;
+
+      a {
+        color: #999;
+      }
+
+      a:hover {
+        color: #ef000c;
+      }
+    }
+  }
+
+  .left-btn {
+    margin-top: 80px !important;
+  }
+
+  .ant-input {
+    font-size: 12px;
+    background-color: rgb(0 0 0 / 3%);
+    border-color: #ebeef5;
+  }
+
+  .ant-btn.ant-btn-lg {
+    height: 56px;
+  }
+
+  .captch {
+    font-weight: 700;
+    line-height: 18px;
+    height: 56px;
+    margin-top: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    width: 160px;
+    font-family: SourceHanSnsCN-Bold, SourceHanSansCN;
+  }
+
+  .disabled {
+    // background: linear-gradient(270deg, #e6bd7f,#a05242, #a05242);
+    background: #bdc1c7;
+    color: rgb(0 0 0 / 25%);
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  .active {
+    background: linear-gradient(110.59deg, #dafff0, #94ffd4 15.4%, #3b95fd 48.9%, #4978f9 85.9%) !important;
+  }
+
+  .ant-btn-default:not(:disabled, .ant-btn-disabled):hover {
+    color: #fff;
+  }
+
+  .phone-code-form {
+    .header {
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      height: 36px;
+      font-weight: 700;
+      color: #1d2328;
+
+      .back-btn {
+        cursor: pointer;
+        margin-right: 8px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .desc {
+        font-size: 12px;
+        font-weight: 500;
+        color: #606266;
+        margin-bottom: 16px;
+      }
+
+      .phone-code-input {
+        position: relative;
+        margin: 0 8px;
+        user-select: none;
+
+        .phone-code-input__security {
+          display: flex;
+          width: 100%;
+          height: 40px;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+
+          .ant-input {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 100%;
+            color: #323233;
+            font-size: 20px;
+            line-height: 1.2;
+            background: #fff;
+            border: 1px solid #e0e2ea;
+            border-radius: 5px;
+            margin-right: 12px;
+
+            .phone-code-input__cursor {
+              width: 1px;
+              height: 40%;
+              animation: blink_cursor 1s infinite;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              background: #323233;
+              transform: translate(-50%, -50%);
+            }
+
+            @keyframes blink_cursor {
+              from,
+              to {
+                opacity: 0;
+              }
+
+              50% {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .time-wrap {
+        margin-top: 16px;
+      }
+    }
+  }
+
+}
